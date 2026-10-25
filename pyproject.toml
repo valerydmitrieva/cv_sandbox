@@ -1,0 +1,24 @@
+[project]
+name = "cv-sandbox"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "lera dmitrieva", email = "" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "isort>=9.0.2",
+    "numpy>=2.5.4",
+    "pytorch-metric-learning>=2.9.0",
+    "scikit-learn>=1.9.1",
+    "torch>=2.14.1",
+    "transformers>=5.19.0",
+]
+
+[project.scripts]
+latorn-cv = "src:shelf_report"
+
+[build-system]
+requires = ["uv_build>=0.13.0,<0.14.0"]
+build-backend = "uv_build"
